@@ -1,0 +1,31 @@
+.page {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  max-width: 100%; 
+  flex-grow: 1;
+  justify-content: flex-start; 
+}
+
+.chat-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  height: 90vh;
+  background: #E2DED0;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.chat-area {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 8px;
+  overflow-y: auto;
+  flex: 1;
+}
