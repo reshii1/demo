@@ -1,12 +1,13 @@
+import { Card, CardHeader, CardContent } from '@mui/material';
 import '../styles/InfoBox.css';
 
-function InfoBox({title, children}) {
-    return (
-        <div className="info-box">
-            <h4 className="info-title">{title}</h4>
-            <div className="info-content">{children}</div>
-        </div>
-    );
+export default function InfoBox({ title, children, className = '' }) {
+  return (
+    <Card className={`info-box ${className}`}>
+      <CardHeader title={title} />
+      <CardContent className="info-content">
+        {children}
+      </CardContent>
+    </Card>
+  );
 }
-
-export default InfoBox;

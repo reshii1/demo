@@ -2,7 +2,6 @@
   border: 1px solid #333;
   background-color: #fff;
   padding: 1rem;
-  width: 400px;
   min-height: 150px;
   border-radius: 10px;
   margin: 1rem;
@@ -22,8 +21,13 @@
 
 .info-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(300px, 1fr)); /* ← wider min width */
-  gap: 2rem;
-  margin-left: 2rem;
-  margin-top: 0;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.info-grid .full-span {
+  grid-column: 1 / 4;
 }
